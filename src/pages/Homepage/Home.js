@@ -38,18 +38,30 @@ export default function Home() {
               </div>
               <div className="mt-14 flex gap-8 justify-center sm:justify-start">
                 <p>
-                  <a href="https://github.com/olabodeeto" target="_blank">
+                  <a
+                    href="https://github.com/olabodeeto"
+                    target="_blank"
+                    rel="noreferrer"
+                  >
                     <GithubFill size={20} />
                   </a>
                 </p>
                 <p>
-                  <a href="https://linkedin.com/in/olabodeeto" target="_blank">
+                  <a
+                    href="https://linkedin.com/in/olabodeeto"
+                    target="_blank"
+                    rel="noreferrer"
+                  >
                     <LinkedInV1Fill size={20} />
                   </a>
                 </p>
 
                 <p>
-                  <a href="https://twitter.com/codebreed" target="_blank">
+                  <a
+                    href="https://twitter.com/codebreed"
+                    target="_blank"
+                    rel="noreferrer"
+                  >
                     <TwitterFill size={24} />
                   </a>
                 </p>

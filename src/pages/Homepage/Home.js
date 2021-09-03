@@ -32,7 +32,7 @@ export default function Home() {
               <p className="mt-5  text-1xl text-yellow-100">
                 FrontEnd Engineer, based in Lagos, Nigeria
               </p>
-              <div className="absolute top-40 left-48 sm:left-60 sm:top-24">
+              <div className="absolute top-10 left-60 sm:left-60 sm:top-24">
                 <img className=" p-2 star" src={star} alt="" />
               </div>
               <div className="mt-14 flex gap-8 justify-center sm:justify-start">

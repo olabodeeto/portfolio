@@ -1,0 +1,87 @@
+.logo {
+  font-size: xx-large;
+  padding: 1rem;
+  color: white;
+  font-weight: 800;
+  float: left;
+}
+
+.header ul {
+  padding: 0;
+  margin: 0;
+  overflow: hidden;
+}
+.header ul li {
+  padding: 0.5rem 0.8rem;
+  font-size: 2.8rem;
+  font-weight: 900;
+  letter-spacing: 0.1rem;
+  transition: all 0.8s ease-in-out;
+}
+.header ul li:hover {
+  padding: 0.5rem 4rem;
+}
+.header .menu {
+  clear: both;
+  height: 0;
+  transition: all 0.8s ease-in-out;
+}
+
+.header .menu-icon {
+  position: relative;
+  padding: 12px 18px;
+  float: right;
+  right: 0.5rem;
+  top: 1.8rem;
+}
+.menu-icon .nav-icon {
+  display: block;
+  background: white;
+  height: 2px;
+  width: 18px;
+  position: relative;
+  transition: all 0.8s ease-in-out;
+}
+
+.menu-icon .nav-icon::before {
+  display: block;
+  content: "";
+  background: white;
+  height: 2px;
+  width: 18px;
+  position: absolute;
+  top: 6px;
+  transition: all 0.8s ease-in-out;
+}
+
+.menu-icon .nav-icon::after {
+  display: block;
+  content: "";
+  background: white;
+  height: 2px;
+  width: 18px;
+  position: absolute;
+  top: -6px;
+  transition: all 0.8s ease-in-out;
+}
+#check {
+  display: none;
+}
+
+#check:checked ~ .menu {
+  height: 100vh;
+}
+
+#check:checked ~ .menu-icon .nav-icon {
+  background: transparent;
+}
+
+#check:checked ~ .menu-icon .nav-icon::before {
+  top: 0;
+  transform: rotate(45deg);
+}
+
+#check:checked ~ .menu-icon .nav-icon::after {
+  top: 0;
+  transform: rotate(-45deg);
+}

@@ -20,7 +20,9 @@ export default function Home() {
           sm:m-auto sm:border-2 sm:border-purple-700 sm:rounded-2xl "
           >
             <div className="md:p-2 md:w-4/12">
-              <p className=" text-white text-2xl font-bold">Hello, I'm</p>
+              <p className=" text-white mt-20 sm:mt-2 text-2xl font-bold">
+                Hello, I'm
+              </p>
               <p>
                 <h1 className="mt-10 text-yellow-200 font-extrabold text-6xl">
                   Ola<span>bode</span>
@@ -32,7 +34,7 @@ export default function Home() {
               <p className="mt-5  text-1xl text-yellow-100">
                 FrontEnd Engineer, based in Lagos, Nigeria
               </p>
-              <div className="absolute top-10 left-60 sm:left-60 sm:top-24">
+              <div className="absolute top-28 left-60 sm:left-60 sm:top-24">
                 <img className=" p-2 star" src={star} alt="" />
               </div>
               <div className="mt-14 flex gap-8 justify-center sm:justify-start">

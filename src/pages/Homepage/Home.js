@@ -1,5 +1,6 @@
 import React from "react";
 import Header from "../../components/Header";
+import { Link } from "react-router-dom";
 import star from "../../assets/star.svg";
 // import bio from "../../assets/bioo.svg";
 import profilephoto from "../../assets/profile.jpeg";
@@ -36,14 +37,20 @@ export default function Home() {
               </div>
               <div className="mt-14 flex gap-8 justify-center sm:justify-start">
                 <p>
-                  <GithubFill size={20} />
+                  <a href="https://github.com/olabodeeto" target="_blank">
+                    <GithubFill size={20} />
+                  </a>
                 </p>
                 <p>
-                  <LinkedInV1Fill size={20} />
+                  <a href="https://linkedin.com/in/olabodeeto" target="_blank">
+                    <LinkedInV1Fill size={20} />
+                  </a>
                 </p>
 
                 <p>
-                  <TwitterFill size={24} />
+                  <a href="https://twitter.com/codebreed" target="_blank">
+                    <TwitterFill size={24} />
+                  </a>
                 </p>
               </div>
             </div>

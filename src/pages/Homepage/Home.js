@@ -101,6 +101,12 @@ export default function Home() {
         <SectionComponent>
           <About title="about." />
         </SectionComponent>
+
+        <SectionComponent>
+          <h2 className="text-center text-gray-50">
+            Portfolio is still underconstruction
+          </h2>
+        </SectionComponent>
       </div>
     </>
   );

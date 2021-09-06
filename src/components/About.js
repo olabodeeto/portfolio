@@ -8,9 +8,14 @@ export default function About({ title }) {
           {title}
         </h1>
         <p className="mt-10 md:w-10/12 lg:w-8/12 text-gray-100">
-          Olabode is a detailed and design minded Frontend Engineer with a
-          centered attention on building efficient and scalable applications
-          with beautiful interface using modern technologies.
+          I'm a creative, detailed and design minded Frontend Engineer with Bsc.
+          degree in Computer science, I centered my attention on building
+          efficient and scalable applications with beautiful interface using
+          modern technologies.
+        </p>
+        <p className="mt-4 md:w-10/12 lg:w-8/12 text-gray-100">
+          I love reading about Techprenuership and Web Enginerring, its latest
+          tools and best practices when not coding.
         </p>
       </div>
     </>

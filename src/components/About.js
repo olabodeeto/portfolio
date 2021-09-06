@@ -14,7 +14,7 @@ export default function About({ title }) {
           modern technologies.
         </p>
         <p className="mt-4 md:w-10/12 lg:w-8/12 text-gray-100">
-          I love reading about Techprenuership and Web Enginerring, its latest
+          I love reading about Techprenuership and Web Enginerring, the latest
           tools and best practices when not coding.
         </p>
       </div>

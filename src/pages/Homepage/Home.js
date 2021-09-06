@@ -23,26 +23,37 @@ export default function Home() {
                 Hello, I'm
               </p>
               <p>
-                <h1 className="mt-10 font-body text-yellow-200 font-extrabold text-6xl">
+                <h1 className="mt-10 font-body text-yellow-300 font-extrabold text-6xl">
                   Ola<span>bode</span>
                 </h1>
-                <h1 className="mt-1 font-body text-yellow-200 font-extrabold text-6xl">
-                  Eto
+                <h1 className="mt-1 font-body text-yellow-300 font-extrabold text-6xl">
+                  Eto,
                 </h1>
               </p>
               <p className="mt-5  text-1xl text-yellow-100">
-                FrontEnd Engineer, based in Lagos, Nigeria
+                FrontEnd Engineer, specialized in
+                <span className="text-red-400 font-extrabold text-lg">
+                  {" "}
+                  React{" "}
+                </span>
+                , based in Lagos, Nigeria
               </p>
               <div className="absolute top-28 left-60 sm:left-60 sm:top-24">
                 <img className=" p-2 star" src={star} alt="" />
               </div>
               <div className="mt-10 sm:float-left">
-                <div
-                  className="w-40 bg-blue-200
-                m-auto p-3 text-center rounded-lg"
+                <a
+                  href="mailto:olabodeeto@gmail.com"
+                  target="_blank"
+                  rel="noreferrer"
                 >
-                  <span>Hire me</span>
-                </div>
+                  <div
+                    className="w-40 bg-blue-200
+                m-auto p-3 text-center rounded-lg"
+                  >
+                    <span>Hire me</span>
+                  </div>
+                </a>
               </div>
 
               <div className="mt-20 sm:mt-40 flex gap-8 justify-center sm:justify-start">

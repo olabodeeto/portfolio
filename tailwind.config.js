@@ -6,6 +6,7 @@ module.exports = {
       fontFamily: {
         body: ["Poppins", "Great Vibes"],
         myname: ["Great Vibes", "Poppins"],
+        ola: ["Comfortaa", "cursive"],
       },
     },
   },

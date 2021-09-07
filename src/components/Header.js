@@ -20,7 +20,7 @@ export default function Header() {
             <li>About</li>
             <li>Projects</li>
             <li>
-              <a href={pdf} target="_blank">
+              <a href={pdf} target="_blank" rel="noreferrer">
                 Resume
               </a>
             </li>
@@ -41,7 +41,7 @@ export default function Header() {
               <li>About</li>
               <li>Projects</li>
               <li>
-                <a href={pdf} target="_blank">
+                <a href={pdf} target="_blank" rel="noreferrer">
                   Resume
                 </a>
               </li>

@@ -1,6 +1,7 @@
 import React from "react";
 import "./Header.css";
 import logo from "../assets/logo.png";
+import pdf from "../assets/Resume.pdf";
 
 export default function Header() {
   return (
@@ -18,6 +19,11 @@ export default function Header() {
             <li>Home</li>
             <li>About</li>
             <li>Projects</li>
+            <li>
+              <a href={pdf} target="_blank">
+                Resume
+              </a>
+            </li>
             <li>Contact</li>
             <li>Blog</li>
           </ul>
@@ -34,7 +40,11 @@ export default function Header() {
               <li>Home</li>
               <li>About</li>
               <li>Projects</li>
-              <li>Resume</li>
+              <li>
+                <a href={pdf} target="_blank">
+                  Resume
+                </a>
+              </li>
               <li>Contact</li>
               <li>Blog</li>
             </ul>

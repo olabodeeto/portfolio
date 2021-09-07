@@ -3,7 +3,7 @@ import React from "react";
 export default function SectionComponent({ children }) {
   return (
     <>
-      <div className="flex justify-center mt-10 pb-20">
+      <div className="flex justify-center pb-20">
         {/* <img className="w-11/12 sm:w-9/12 " src={bio} alt="" /> */}
         <div
           className="w-10/12 sm:w-9/12 border-2 border-yellow-100 m-2 p-4 rounded-2xl

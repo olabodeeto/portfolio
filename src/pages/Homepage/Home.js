@@ -6,6 +6,7 @@ import profilephoto from "../../assets/profile.jpeg";
 import { GithubFill, LinkedInV1Fill, TwitterFill } from "akar-icons";
 import SectionComponent from "../../components/SectionComponent";
 import About from "../../components/About";
+import Tools from "../../components/Tools";
 
 export default function Home() {
   return (
@@ -98,15 +99,21 @@ export default function Home() {
             </div>
           </div>
         </div>
-        <SectionComponent>
-          <About title="about." />
-        </SectionComponent>
-
-        <SectionComponent>
-          <h2 className="text-center text-gray-50">
-            Portfolio is still underconstruction
-          </h2>
-        </SectionComponent>
+        <div className="mt-20">
+          <SectionComponent>
+            <About title="about." />
+          </SectionComponent>
+        </div>
+      </div>
+      <Tools />
+      <div className=" bg-purple-600">
+        <div className="pt-20">
+          <SectionComponent>
+            <h2 className="text-center text-gray-50">
+              Portfolio is still underconstruction
+            </h2>
+          </SectionComponent>
+        </div>
       </div>
     </>
   );

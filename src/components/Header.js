@@ -34,6 +34,7 @@ export default function Header() {
               <li>Home</li>
               <li>About</li>
               <li>Projects</li>
+              <li>Resume</li>
               <li>Contact</li>
               <li>Blog</li>
             </ul>

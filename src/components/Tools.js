@@ -2,7 +2,7 @@ import React from "react";
 import js from "../assets/js.png";
 import reicon from "../assets/reicon.png";
 import css3 from "../assets/css3.png";
-import tailwindicon from "../assets/tailwindcss-icon.svg";
+import tailwindicon from "../assets/tailwindcss-icon.png";
 
 export default function Tools() {
   return (
@@ -12,18 +12,22 @@ export default function Tools() {
           <h1 className="text-4xl text-center font-body text-yellow-200 font-extrabold">
             My Arsenal
           </h1>
-          <div className="flex gap-2 sm:gap-10 justify-center  text-center w-full p-5 mt-28 ">
-            <div>
-              <img className="w-4/12 sm:w-4/12" src={reicon} alt="" />
+          <div className="grid grid-cols-3 gap-x-4 gap-y-14 mt-28  sm:ml-28 sm:gap-y-20">
+            <div className="h-16 w-20 sm:h-20 sm:w-24 flex flex-col items-center">
+              <img src={reicon} alt="" />
+              <span className="mt-4">React</span>
             </div>
-            <div>
-              <img className="w-4/12 sm:w-4/12" src={js} alt="" />
+            <div className="h-16 w-16 sm:h-20 sm:w-20 flex flex-col items-center">
+              <img src={js} alt="" />
+              <span className="mt-5">Javascript</span>
             </div>
-            <div>
-              <img className="w-4/12 sm:w-4/12" src={css3} alt="" />
+            <div className="h-16 w-16 sm:h-20 sm:w-20 flex flex-col items-center">
+              <img src={css3} alt="" />
+              <span className="mt-3 sm:mt-5">Css3</span>
             </div>
-            <div className="flex">
-              <img className="w-28 sm:w-4/12" src={tailwindicon} alt="" />
+            <div className="h-16 w-16 sm:h-20 sm:w-20 flex flex-col items-center">
+              <img className="w-full mt-10" src={tailwindicon} alt="" />
+              <span className="mt-5">Tailwind</span>
             </div>
           </div>
         </div>

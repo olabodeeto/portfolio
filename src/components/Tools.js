@@ -14,16 +14,16 @@ export default function Tools() {
           </h1>
           <div className="flex gap-2 sm:gap-10 justify-center  text-center w-full p-5 mt-28 ">
             <div>
-              <img className="w-4/12 sm:w-4/12" src={reicon} />
+              <img className="w-4/12 sm:w-4/12" src={reicon} alt="" />
             </div>
             <div>
-              <img className="w-4/12 sm:w-4/12" src={js} />
+              <img className="w-4/12 sm:w-4/12" src={js} alt="" />
             </div>
             <div>
-              <img className="w-4/12 sm:w-4/12" src={css3} />
+              <img className="w-4/12 sm:w-4/12" src={css3} alt="" />
             </div>
             <div className="flex">
-              <img className="w-28 sm:w-4/12" src={tailwindicon} />
+              <img className="w-28 sm:w-4/12" src={tailwindicon} alt="" />
             </div>
           </div>
         </div>

@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <title></title>
+    <meta name="description" content="" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="stylesheet" href="./css/style.css" />
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+  </head>
+  <body>
+    <header>
+      <div class="mobile-header">
+        <input type="checkbox" id="check" />
+        <div class="logo">
+          <img src="./img/logo.svg" alt="olabode logo" />
+        </div>
+        <label for="check" class="menu-icon">
+          <span class="nav-icon"></span>
+        </label>
+
+        <ul class="menu">
+          <li><a href="#about">About me</a></li>
+          <li><a href="#tools">My tools</a></li>
+          <!-- <li><a href="">Blog</a></li> -->
+          <li><a href="">Projects</a></li>
+          <li><a href="">Contact</a></li>
+        </ul>
+      </div>
+    </header>
+    <main>
+      <section id="hero-section">
+        <div id="hero">
+          <div id="herocontent">
+            <div class="greeting">Hi <span>👋🏽</span> I am</div>
+            <h1
+              data-aos="fade-up"
+              data-aos-anchor-placement="center-center"
+              data-aos-duration="3000"
+            >
+              Olabode Eto
+            </h1>
+            <h2>Software Engineer</h2>
+            <h4>(Frontend heavy)</h4>
+
+            <a href="#" class="app-primary-btn">Hire me</a>
+            <div class="hero-path-img"></div>
+          </div>
+          <div
+            class="hero-image"
+            data-aos="zoom-in"
+            data-aos-anchor-placement="center-center"
+            data-aos-duration="2000"
+          >
+            <img src="./img/avatar.svg" alt="olabode" />
+          </div>
+        </div>
+        <div class="hero-icons">
+          <a href="">
+            <img src="./img/twittericon.svg" />
+          </a>
+          <a href="">
+            <img src="./img/linkedinicon.svg" />
+          </a>
+        </div>
+      </section>
+      <section class="about" id="about">
+        <div class="about-section-container">
+          <div
+            class="about-section-content"
+            data-aos="fade-down"
+            data-aos-easing="linear"
+            data-aos-duration="1500"
+          >
+            <h2 class="about-mobile-title">About <span>me</span></h2>
+            <div class="about-lg-content">
+              <div class="about-avatar-container">
+                <img src="./img/profileone.svg" alt="" />
+              </div>
+
+              <div
+                class="about-text"
+                data-aos="fade-down"
+                data-aos-easing="linear"
+                data-aos-duration="1500"
+              >
+                <h2 class="about-lg-title">About <span>me</span></h2>
+                <p
+                  data-aos="fade-zoom-in"
+                  data-aos-easing="ease-in-back"
+                  data-aos-delay="300"
+                  data-aos-offset="0"
+                >
+                  Hello! My name is Olabode Eto ( “Bode” in short form) and I
+                  enjoy creating things that live on the internet. I am a
+                  fullstack software developer but frontend developement heavy.
+                  I have worked in tech and on the web for over 3 years with
+                  experience ranging from JavaScript, ReactJs, NextJs, NodeJs,
+                  Html, CSS, and Accessibility. In the past, I have worked with
+                  passionate people and companies like Maxut consult, Trruly and
+                  Sendchoco. Presently I am building amazing fintech products
+                  alongside the amazing team at Etrustfund.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="tools" id="tools">
+        <h2><span>My</span> tools</h2>
+        <div class="tools-container">
+          <div class="tools-wrapper">
+            <div
+              class="tool"
+              data-aos="fade-zoom-in"
+              data-aos-easing="ease-in-back"
+              data-aos-delay="800"
+              data-aos-offset="0"
+            >
+              <div class="tool-img">
+                <img src="./img/htmlicon.svg" alt="" />
+              </div>
+              <p>Html</p>
+            </div>
+            <div
+              class="tool"
+              data-aos="fade-zoom-in"
+              data-aos-easing="ease-in-back"
+              data-aos-delay="1000"
+              data-aos-offset="0"
+            >
+              <div class="tool-img">
+                <img src="./img/cssicon.svg" alt="" />
+              </div>
+              <p>Css</p>
+            </div>
+            <div class="tool" data-aos="zoom-in-down">
+              <div class="tool-img">
+                <img src="./img/jsicon.svg" />
+              </div>
+              <p>JavaScript</p>
+            </div>
+            <div
+              class="tool"
+              data-aos="fade-zoom-in"
+              data-aos-easing="ease-in-back"
+              data-aos-delay="1000"
+              data-aos-offset="0"
+            >
+              <div class="tool-img">
+                <img src="./img/reacticon.svg" />
+              </div>
+              <p>ReactJs</p>
+            </div>
+            <div class="tool" data-aos="zoom-in-down">
+              <div class="tool-img">
+                <img src="./img/nodeicon.svg" />
+              </div>
+              <p>NodeJs</p>
+            </div>
+
+            <div
+              class="tool"
+              data-aos="fade-right"
+              data-aos-delay="800"
+              data-aos-easing="ease-in-sine"
+            >
+              <div class="tool-img">
+                <img src="./img/mongoicon.svg" />
+              </div>
+              <p>MongoDB</p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="projects">
+        <h2>Projects</h2>
+        <div class="project-container">
+          <div class="project">
+            <h3>My Portfolio</h3>
+            <span class="project-type">Html, Css, Javascript</span>
+            <p class="project-description">
+              This portfolio project was developed purposely to showcase my
+              present and future projects, also to house my other technical
+              contents and to serve as porte of contact for prospective clients
+              and future employers
+            </p>
+            <div class="project-screenshoot">
+              <img src="./img/proj1.png" alt="olabode portfolio screenshot" />
+            </div>
+          </div>
+          <div class="project"></div>
+        </div>
+      </section>
+    </main>
+    <script src="" async defer></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+      AOS.init();
+    </script>
+  </body>
+</html>

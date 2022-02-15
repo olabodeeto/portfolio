@@ -13,7 +13,7 @@ a {
   --shadowWhite: #d7e3f2;
   --bodyBg: #eff1f7;
   --fontColor: #3e556c;
-  --textColor: #71808e;
+  --textColor: #1f2934;
 }
 
 html {
@@ -23,7 +23,7 @@ html {
 body {
   background: var(--bodyBg);
   font-weight: 100;
-  color: var(--fontColor);
+  color: var(--textColor);
 }
 /* ======== components ============= */
 .app-primary-btn {

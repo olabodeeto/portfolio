@@ -22,7 +22,7 @@ html {
 }
 body {
   background: var(--bodyBg);
-  font-weight: 200;
+  font-weight: normal;
   color: var(--textColor);
 }
 /* ======== components ============= */

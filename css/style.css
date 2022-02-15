@@ -22,7 +22,7 @@ html {
 }
 body {
   background: var(--bodyBg);
-  font-weight: 100;
+  font-weight: 200;
   color: var(--textColor);
 }
 /* ======== components ============= */
@@ -391,7 +391,6 @@ section {
 .about-text p {
   font-size: medium;
   line-height: 2em;
-  font-weight: 100;
   color: var(--fontColor);
 }
 .about-lg-content {

@@ -21,7 +21,9 @@ html {
   scroll-behavior: smooth;
 }
 body {
-  background: var(--bodyBg);
+  /* background: var(--bodyBg); */
+  background: var(--bodyBg) url("../img/Pathbgg.svg");
+  background-attachment: fixed;
   font-weight: normal;
   color: var(--textColor);
 }
@@ -53,7 +55,7 @@ section {
 
 .mobile-header .logo img {
   width: auto;
-  height: 50px;
+  height: 35px;
 }
 
 .mobile-header ul {
@@ -67,13 +69,13 @@ section {
   padding: 0.4em;
   position: relative;
   float: right;
-  top: 1.8em;
+  top: 1.2em;
   right: 0.6em;
 }
 
 .mobile-header .menu-icon .nav-icon {
   display: block;
-  background: var(--appBlue);
+  background: transparent;
   width: 20px;
   height: 4px;
   position: relative;
@@ -87,7 +89,7 @@ section {
   width: 20px;
   height: 4px;
   position: absolute;
-  top: 6px;
+  top: 1px;
   transition: all 0.8s ease-in-out;
 }
 .menu-icon .nav-icon::after {
@@ -113,13 +115,11 @@ section {
   font-size: xx-large;
   font-weight: bolder;
 
-  letter-spacing: 0.1em;
   /* display: none; */
 }
 .mobile-header .menu li a {
-  color: transparent;
-  -webkit-text-stroke-width: 2px;
-  -webkit-text-stroke-color: var(--shadowWhite);
+  color: white;
+  font-size: 1.4em;
 }
 
 #check:checked ~ .menu-icon .nav-icon {
@@ -155,7 +155,7 @@ section {
     top: 0;
   }
   .mobile-header .logo {
-    padding: 0.4em 4.8em;
+    padding: 0.4em 7.4em;
   }
   .mobile-header .menu-icon {
     display: none;
@@ -164,7 +164,7 @@ section {
   .mobile-header ul {
     overflow: hidden;
     padding: 0;
-    margin-right: 4em;
+    margin-right: 7.4em;
     display: flex;
     list-style: none;
   }
@@ -210,9 +210,10 @@ section {
 /*======================== Hero section ======================== */
 
 #hero {
+  position: relative;
 }
 #herocontent {
-  margin-top: 8em;
+  margin-top: 6em;
   padding-top: 0.4em;
   height: 100vh;
   /* border: 2px solid red; */
@@ -220,7 +221,6 @@ section {
   flex-direction: column;
   align-items: center;
   position: relative;
-  border-bottom: 45px solid var(--appBlue);
 }
 
 .greeting {
@@ -288,6 +288,7 @@ section {
   background: url("../img/herobottompath.svg") no-repeat;
   background-size: cover;
   background-attachment: fixed;
+  display: none;
 }
 
 .hero-image {
@@ -297,26 +298,75 @@ section {
 
 .hero-icons {
   display: flex;
-  gap: 1em;
+  gap: 1.5em;
   width: 100%;
   justify-content: center;
+  align-items: center;
   position: relative;
-  bottom: 2em;
+  background: white;
+  width: 90%;
+  margin: auto;
+  bottom: 10em;
+  padding: 2em;
+  transition: all ease 1.8s;
+  animation-name: heroicons;
+  animation-duration: 0.8s;
+  animation-fill-mode: forwards;
+}
+@keyframes heroicons {
+  from {
+    transform: rotate(-90deg);
+  }
+  to {
+    transform: rotate(0deg);
+  }
+}
+
+.move-hero-icons {
+  display: flex;
+  gap: 1.5em;
+  width: 100%;
+  justify-content: center;
+  align-items: center;
+  position: fixed;
+  background: white;
+  width: 34%;
+  margin: auto;
+  bottom: 10em;
+  padding: 1.6em;
+  transform: rotate(-90deg);
+  left: -40px;
+  transition: all ease 1.8s;
+  animation-name: moveheroicons;
+  animation-duration: 0.8s;
+  animation-fill-mode: forwards;
+  z-index: 90;
+}
+
+@keyframes moveheroicons {
+  from {
+    transform: rotate(0deg);
+    left: 40px;
+  }
+  to {
+    transform: rotate(-90deg);
+    left: -60px;
+  }
 }
 
 @media (min-width: 998px) {
   #hero-section {
-    height: 80vh;
-    background: url("../img/heropathdesktop.svg") no-repeat;
-    background-size: cover;
+    /* background: url("../img/heropathdesktop.svg") no-repeat; */
+    /* background-size: cover;
     height: 100vh;
     border-bottom: 10px solid var(--appBlue);
-    background-attachment: fixed;
+    background-attachment: fixed; */
+    min-height: 100vh;
   }
   #hero {
     display: flex;
     flex-direction: row;
-    width: 88%;
+    width: 82%;
     margin: auto;
   }
   #herocontent {
@@ -350,13 +400,45 @@ section {
   }
 
   .hero-icons {
+    width: 40%;
+    margin: auto;
+  }
+
+  .hero-icons {
     bottom: 2em;
+  }
+
+  .move-hero-icons {
+    display: flex;
+    gap: 1.5em;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    position: fixed;
+    background: white;
+    width: 34%;
+    margin: auto;
+    bottom: 10em;
+    padding: 1.6em;
+    transform: rotate(-90deg);
+    left: -200px;
+  }
+
+  @keyframes moveheroicons {
+    from {
+      transform: rotate(0deg);
+      left: 40px;
+    }
+    to {
+      transform: rotate(-90deg);
+      left: -200px;
+    }
   }
 }
 
 /* ========== About ========== */
 .about {
-  padding-top: 8em;
+  padding-top: 4em;
 }
 .about h2 {
   text-align: center;
@@ -386,6 +468,8 @@ section {
   background: white;
   margin-top: 5.8em;
   color: var(--textColor);
+  position: relative;
+  overflow: hidden;
 }
 
 .about-text p {
@@ -400,6 +484,16 @@ section {
 }
 .about-lg-title {
   display: none;
+}
+
+.about-ribbon {
+  background: #2d56de;
+  height: 50px;
+  width: 100px;
+  position: absolute;
+  right: -40px;
+  bottom: -10px;
+  transform: rotate(-48deg);
 }
 
 @media (min-width: 998px) {

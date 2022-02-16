@@ -272,13 +272,11 @@ section {
 
 #herocontent h2 {
   margin-top: 1em;
-  font-weight: 200;
   color: var(--appBlue);
 }
 
 #herocontent h4 {
   margin-top: 1.2em;
-  font-weight: 200;
   width: 80%;
   text-align: center;
 }

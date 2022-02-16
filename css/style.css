@@ -24,7 +24,7 @@ body {
   /* background: var(--bodyBg); */
   background: var(--bodyBg) url("../img/Pathbgg.svg");
   background-attachment: fixed;
-  font-weight: normal;
+  font-weight: 300;
   color: var(--textColor);
 }
 /* ======== components ============= */

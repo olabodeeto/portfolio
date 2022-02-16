@@ -765,7 +765,7 @@ section {
 }
 
 .contact-form-container {
-  width: 80%;
+  width: 70%;
   margin: auto;
   margin-top: 4em;
   background: white;
@@ -773,6 +773,7 @@ section {
 }
 
 .contact-form {
+  width: 100%;
   display: flex;
   flex-direction: column;
 }
@@ -822,7 +823,7 @@ section {
     top: 20em;
   }
   .contact-form-container {
-    width: 50%;
+    width: 40%;
     margin: auto;
     margin-top: 8em;
   }

@@ -280,6 +280,7 @@ section {
   margin-top: 1.2em;
   font-weight: 200;
   width: 80%;
+  text-align: center;
 }
 
 #herocontent a {
@@ -390,6 +391,12 @@ section {
     width: 10em;
     text-align: left;
     color: var(--fontColor);
+  }
+  #herocontent h4 {
+    margin-top: 1.2em;
+    font-weight: 200;
+    width: 80%;
+    text-align: left;
   }
   .hero-image {
     min-height: 20vh;

@@ -9,3 +9,8 @@ function myFunction() {
     document.getElementById("heroicons").className = "hero-icons";
   }
 }
+
+function checker() {
+  let check = document.getElementById("check");
+  check.checked = !check.checked;
+}
